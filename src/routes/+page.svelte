@@ -41,11 +41,10 @@
 					<BlurFade
 						delay={BLUR_FADE_DELAY}
 						class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-						yOffset={8}>Hi, I'm Bhide 👋</BlurFade
+						yOffset={8}>Hi, I'm Adwaith 👋</BlurFade
 					>
 					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
-						>Software Engineer turned Entrepreneur. I love building things and helping people. Very
-						active on Twitter.</BlurFade
+						>{DATA.description}</BlurFade
 					>
 				</div>
 				<BlurFade delay={BLUR_FADE_DELAY}>
@@ -68,18 +67,6 @@
 				{@html marked(DATA.summary)}
 			</div>
 		</BlurFade>
-	</section>
-	<section id="work">
-		<div class="flex min-h-0 flex-col gap-y-3">
-			<BlurFade delay={BLUR_FADE_DELAY}>
-				<h2 class="text-xl font-bold">Work Experience</h2>
-			</BlurFade>
-			{#each DATA.work as work, id}
-				<BlurFade delay={BLUR_FADE_DELAY * 1.2 + id * 0.05}>
-					<ResumeCard {...work} />
-				</BlurFade>
-			{/each}
-		</div>
 	</section>
 	<section id="education">
 		<div class="flex min-h-0 flex-col gap-y-3">
@@ -121,21 +108,20 @@
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
 					<div class="space-y-2">
 						<div class="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-							My Projects
+							Under Construction
 						</div>
 						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
-							Check out my latest work
+							Lorem ipsum
 						</h2>
 						<p
 							class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 						>
-							I&apos;ve worked on a variety of projects, from simple websites to complex web
-							applications. Here are a few of my favorites.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias eligendi nobis ratione delectus! Laborum unde, rem, officia ad rerum hic excepturi dicta labore optio velit quod doloremque voluptatem, quis facilis.
 						</p>
 					</div>
 				</div>
 			</BlurFade>
-			<div class="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
+			<!-- <div class="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
 				{#each DATA.projects as project, id}
 					<BlurFade delay={BLUR_FADE_DELAY * 1.5 + id * 0.05}>
 						<ProjectCard
@@ -150,39 +136,7 @@
 						/>
 					</BlurFade>
 				{/each}
-			</div>
-		</div>
-	</section>
-	<section id="hackathons">
-		<div class="w-full space-y-12 py-12">
-			<BlurFade delay={BLUR_FADE_DELAY}>
-				<div class="flex flex-col items-center justify-center space-y-4 text-center">
-					<div class="space-y-2">
-						<div class="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-							Hackathons
-						</div>
-						<h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">I like building things</h2>
-						<p
-							class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-						>
-							During my time in university, I attended{' '}
-							{DATA.hackathons.length}+ hackathons. People from around the country would come
-							together and build incredible things in 2-3 days. It was eye-opening to see the
-							endless possibilities brought to life by a group of motivated and passionate
-							individuals.
-						</p>
-					</div>
-				</div>
-			</BlurFade>
-			<BlurFade delay={BLUR_FADE_DELAY * 2}>
-				<ul class="mb-4 ml-4 divide-y divide-dashed border-l">
-					{#each DATA.hackathons as project}
-						<BlurFade delay={BLUR_FADE_DELAY}>
-							<HackathonCard {...project} />
-						</BlurFade>
-					{/each}
-				</ul>
-			</BlurFade>
+			</div> -->
 		</div>
 	</section>
 	<section id="contact">
@@ -197,9 +151,6 @@
 						class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 					>
 						Want to chat? Just shoot me a dm
-						<a href={DATA.contact.social.X.url} class="text-blue-500 hover:underline">
-							with a direct question on twitter
-						</a>
 						and I&apos;ll respond whenever I can. I will ignore all soliciting.
 					</p>
 				</div>

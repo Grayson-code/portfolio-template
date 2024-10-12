@@ -12,10 +12,10 @@
 </svelte:head>
 
 <BlurFade delay={BLUR_FADE_DELAY}>
-	<h1 class="mb-8 text-2xl font-medium tracking-tighter">Blog</h1>
+	<h1 class="mb-8 text-2xl font-medium tracking-tighter">Under Construction</h1>
 </BlurFade>
 <!-- Posts -->
-<section>
+<!-- <section>
 	<ul class="posts">
 		{#each data.posts as post, id}
 			<li class="post">
@@ -32,7 +32,7 @@
 			</li>
 		{/each}
 	</ul>
-</section>
+</section> -->
 
 <style>
 	.posts {
